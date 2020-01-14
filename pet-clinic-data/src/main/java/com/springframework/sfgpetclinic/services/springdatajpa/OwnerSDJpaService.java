@@ -12,7 +12,7 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-//Using profile at this point help avoid 2 beans from being active
+//Using profile at this point help avoid 2 beans (both implementing OwnerService) from being active at the same time
 @Service
 @Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
